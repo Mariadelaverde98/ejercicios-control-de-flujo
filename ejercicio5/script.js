@@ -10,7 +10,7 @@ function solicitar (){
     if(letra == 'c'){
         alert("101");
     }
-    if(letra != a && letra != b && letra != c){
+    if(letra != 'a' && letra != 'b' && letra != 'c'){
         alert("Te has equivocado de letra");
     }
 }
@@ -18,13 +18,13 @@ function solicitar (){
 function solicitar2(){
     var letra = prompt("Introduce una letra: ");
     switch(letra) {
-        case a:
+        case 'a':
             alert("7");
             break;
-        case b:
+        case 'b':
             alert("9");
             break;
-        case c:
+        case 'c':
             alert("101");
             break;
         default:
