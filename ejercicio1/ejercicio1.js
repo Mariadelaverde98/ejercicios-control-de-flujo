@@ -4,6 +4,9 @@ function solicitar() {
     var n1 = window.prompt("Inserta un número entero: ");
     var n2 = window.prompt("Inserta un número entero: ");
     var n3 = window.prompt("Inserta un número entero: ");
+    n1 = parseInt(n1);
+    n2 = parseInt(n2);
+    n3 = parseInt(n3);
     if(n1 <= n2 && n1 <= n3) {
         alert("n1 es el menor");
     }

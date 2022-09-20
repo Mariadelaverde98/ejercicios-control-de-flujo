@@ -3,15 +3,17 @@ function validar() {
     var user = "usuario";
     var pass = "contraseña";
     var intentos = 0;
+    var correcto = false;
     do{
         var usuario = window.prompt("Inserta tu usuario: ");
         var contraseña = window.prompt("Inserta tu contraseña: ");
         if (usuario == user && contraseña == pass) {
+            correcto = true;
             alert('todo correcto');
         }else{
             intentos++;
             alert('usuario o contraseña incorrectos');
         }  
-    }while((usuario != user || contraseña != pass) && intentos < 3)
+    }while(correcto == false && intentos < 3)
 
 }
